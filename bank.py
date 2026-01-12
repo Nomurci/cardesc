@@ -188,7 +188,7 @@ def main():
     # Main menu
     os.system('clear || cls')
     print(print_logo(meta))
-    print("[0] View History\n[1] Start Payment Page\n[2] Settings\n[3] Help\n")
+    print("[0] View History\n[1] Start Payment Page\n[2] Settings\n[3] Help\n[4] AI Assistant\n")
     
     try:
         choice = input("[>] Select option: ").strip()
@@ -200,6 +200,9 @@ def main():
             open_settings(meta, 'dist/details/settings.json')
         elif choice == '3':
             show_help(meta)
+        elif choice == '4':
+            import assistant
+            assistant.main()
     except KeyboardInterrupt:
         print("\n[>] Goodbye my friend ! Remember Forewarned is forearmed :>")
     except Exception as orange:
