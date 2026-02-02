@@ -31,5 +31,9 @@ args = "python bank.py"
 outputType = "console"
 
 [[ports]]
+localPort = 4
+externalPort = 3000
+
+[[ports]]
 localPort = 8080
 externalPort = 80
